@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title yield :title %></title>
+
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "frontend", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
+  </head>
+
+  <body>
+    <%= render "frontend/shared/header" %>
+    <%= yield %>
+    <%= render "frontend/shared/footer" %>
+  </body>
+</html>
