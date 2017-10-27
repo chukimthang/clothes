@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  root "static_pages#home"
+  scope :admin do
+    scope module: :backend do
+      root "application#index"
+    end
+  end
 
-  namespace :admin do
-    root "dash_board#index", as: :home
+  scope module: :frontend do
+    root "application#index"
   end
 end
