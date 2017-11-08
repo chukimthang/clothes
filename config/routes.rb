@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
   scope module: :frontend do
     root "application#index"
+
+    resources :users, only: [:new, :create]
   end
 end
