@@ -17,8 +17,7 @@ class Frontend::UsersController < ApplicationController
 
   private
   def user_params
-    user = params.require(:user).permit :name, :email, :password,
+    params.require(:user).permit :name, :email, :password,
       :password_confirmation, :phone, :avatar
-    user.merge!({"is_admin" => 0})
   end
 end
