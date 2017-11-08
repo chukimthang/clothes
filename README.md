@@ -1,2 +1,3 @@
 - rails generate model User
-- rails generate controller Admin/DashBoard
+- rails generate controller frontend/Users
+

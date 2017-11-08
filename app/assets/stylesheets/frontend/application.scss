@@ -619,6 +619,7 @@ li {
 /* footer */
 footer {
   background-color: #262626;
+  margin-top: 50px;
 }
 
 /* footer-top */
@@ -713,4 +714,8 @@ h3.heading-title {
 
 .footer-bottom a {
   color: #999999;
+}
+/* other */
+.text-danger {
+  color: red;
 }
